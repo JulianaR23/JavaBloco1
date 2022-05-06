@@ -27,7 +27,7 @@ public class Exercicio2 {
 			System.out.println("\nEm ordem crescente: \n" + n1 + "\n" + n3 + "\n" + n2);
 		
 		else if(n3>n1 && n3>n2 && n2>n1)
-			System.out.println("\nEm ordem crescente: \n" + n3 + "\n" + n2 + "\n" + n1);
+			System.out.println("\nEm ordem crescente: \n" + n1 + "\n" + n2 + "\n" + n3);
 		
 		else
 			System.out.println("\nEm ordem crescente: \n" + n2 + "\n" + n1 + "\n" + n3);
