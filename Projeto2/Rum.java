@@ -24,5 +24,6 @@ public class Rum extends BaseAvatar {
 	   { m1.perguntasmanu();}
 	   else if(a1.falarcomquem==2)
 	   { m2.perguntasmanu();}
+	   
 	}
 }

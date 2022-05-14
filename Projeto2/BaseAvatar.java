@@ -1,13 +1,23 @@
 package Projeto2;
 
 public class BaseAvatar implements Falas  {
-
+	
+	public int soma(int n1,int n2)
+	{
+		return n1+n2;
+	}
+	public int soma(int n1, int n2, int n3)
+	{
+		return n1+n2+n3;
+	}
+	
+	
 	private String nome;
 	private int idade;
 	String fala;
     private String genero;
    
-public String getNome() {
+    public String getNome() {
 		return nome;
 	}
 
@@ -31,11 +41,10 @@ public String getNome() {
 		this.genero = genero;
 	}
 
-@Override
-public void perguntasmanu() {
-	
-	
-}
+	@Override
+	public void perguntasmanu() {
+
+	}
 
    
 

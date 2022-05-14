@@ -117,15 +117,15 @@ public class Manu2 extends BaseAvatar {
 			
 			else if(res>9)
 			{
-				System.out.println("\nOpção inválida, Digite uma opção de 1 à 5!");
+				System.out.println("\nOpção inválida, Digite uma opção de 1 à 9!");
 				   res = ler.nextInt();
 			}
 			else if(res<0)
 			{
-				System.out.println("\nOpção inválida, Digite uma opção de 1 à 5!");
+				System.out.println("\nOpção inválida, Digite uma opção de 1 à 9!");
 				   res = ler.nextInt();
 			}
-			else if(res==0)
+			else 
 			{
 				 System.out.println("\nEsperamos ter te ajudado!\n\nCaso contrário, acesse nosso site  https://brazil.generation.org/ \r\n"
 					   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"

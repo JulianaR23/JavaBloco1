@@ -10,6 +10,8 @@ public class Manu1 extends BaseAvatar  {
 	
 	@Override
 	public void perguntasmanu() { 
+		
+		
 		System.out.println("\nLegal que queira saber mais sobre a Generation!!");
 		System.out.println("Digite o número correspondente as opção abaixo:");
 		   System.out.println("1 -Sobre história generation");
@@ -18,11 +20,9 @@ public class Manu1 extends BaseAvatar  {
 		   System.out.println("4 -Nossos programa");
 		   System.out.println("5 -Nossos parceiros");
 		   System.out.println("Se quiser sair digite 0.");
-		   
-		   
+		    
 		   res = ler.nextInt();
-		   
-		   
+   
 		  while(res==1||res==2||res==3||res==4||res==5||res==0||res<0||res>5) {
 		   if(res==1)
 		   {
@@ -74,17 +74,17 @@ public class Manu1 extends BaseAvatar  {
 				res=ler.nextInt();
 		   }
 		   else if(res>5){
-			   System.out.println("\nOpção inválida, Digite uma opção de 1 à 6!");
+			   System.out.println("\nOpção inválida, Digite uma opção de 1 à 5!");
 			   System.out.println("Ou se quiser sair digite 0.");
 			   res = ler.nextInt();
 		   }
 		   else if(res<0)
 		   {
-			   System.out.println("\nOpção inválida, Digite uma opção de 1 à 6!");
+			   System.out.println("\nOpção inválida, Digite uma opção de 1 à 5!");
 			   System.out.println("Ou se quiser sair digite 0.");
 			   res = ler.nextInt();
 		   }
-		   else if(res==0)
+		   else 
 		   {
 			   System.out.println("\nEsperamos ter te ajudado!\n\nCaso contrário, acesse nosso site  https://brazil.generation.org/ \r\n"
 				   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"
@@ -94,9 +94,7 @@ public class Manu1 extends BaseAvatar  {
 		   }
 		  
 		  }
+		 	
+			
 	}
-	
-	
-	
-
 }
