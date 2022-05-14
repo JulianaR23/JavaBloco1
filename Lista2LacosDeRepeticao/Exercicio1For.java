@@ -2,7 +2,7 @@ package Lista2LacosDeRepeticao;
 
 import java.util.Scanner;
 
-public class Exercicio2For {
+public class Exercicio1For {
 
 	public static void main(String[] args) {
 		

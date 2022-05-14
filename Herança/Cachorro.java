@@ -13,9 +13,8 @@ public class Cachorro extends Animal {
 	@Override
 	public void emitirSom()
 	{
-		System.out.println("O som que o cachorro faz é: Au au");
+		System.out.println("O som da que a cachorrofaz é de: auu auu");
 	}
-
 	
 	public void acao() 
 	{
