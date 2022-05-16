@@ -3,27 +3,24 @@ package Projeto2;
 import java.util.Scanner;
 
 public class Manu2 extends BaseAvatar {
+
+	Scanner ler =new Scanner(System.in);
 	
 	int res;
 	
-	Scanner ler =new Scanner(System.in);
-	
 	@Override
 	public void perguntasmanu() {
-		System.out.println("\nLegal, vamos la tirar suas dúvidas!!");
-		System.out.println("Digite o número correspondente as opção abaixo: ");
-		System.out.println("1 -Como participar do nosso programa?");
-		System.out.println("2 -Preciso ter conhecimento em programação?");
-		System.out.println("3 -Quais exigências para poder participar?");
-		System.out.println("4 -Quantos tempo dura o Bootcamp?");
-		System.out.println("5 -Não tenho internet e computador em casa, posso participar?");
-		System.out.println("6 -Como preparamos você?");
-		System.out.println("7 -O que você vai aprender?");
-		System.out.println("8 -O que faz um desenvolvedor Junior?");
-		System.out.println("9 -Como será sua jornada?");
-		System.out.println("Se quiser sair digite 0.");
 		
-		res = ler.nextInt();
+			res = ler.nextInt();
+		
+		if(res==0)
+		{
+			System.out.println("\nEsperamos ter te ajudado!\n\nCaso contrário, acesse nosso site  https://brazil.generation.org/ \r\n"
+			   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"
+			   		+ "Instagram: @generationbrasil\r\n"
+			   		+ "Whatsapp: 90000-0000\r\n\n\nVejo você por lá!!");
+			System.exit(res);
+		}
 		
 		
 		while(res==1||res==2||res==3||res==4||res==5||res==6||res==7||res==8||res==9||res==0||res<0||res>9) {
@@ -131,12 +128,9 @@ public class Manu2 extends BaseAvatar {
 					   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"
 					   		+ "Instagram: @generationbrasil\r\n"
 					   		+ "Whatsapp: 90000-0000\r\n\n\nVejo você por lá!!");
-				 break;
+				 System.exit(res);
 			}
 		}
 		
 	}
-
-	
-	
 }

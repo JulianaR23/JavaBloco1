@@ -3,26 +3,26 @@ package Projeto2;
 import java.util.Scanner;
 
 public class Manu1 extends BaseAvatar  {
-	
-	int res;
 
 	Scanner ler = new Scanner(System.in);
 	
+	int res;
+	
 	@Override
 	public void perguntasmanu() { 
-		
-		
-		System.out.println("\nLegal que queira saber mais sobre a Generation!!");
-		System.out.println("Digite o número correspondente as opção abaixo:");
-		   System.out.println("1 -Sobre história generation");
-		   System.out.println("2 -Missão Generation");   
-		   System.out.println("3 -Princípios e Valores Generation");
-		   System.out.println("4 -Nossos programa");
-		   System.out.println("5 -Nossos parceiros");
-		   System.out.println("Se quiser sair digite 0.");
-		    
+
 		   res = ler.nextInt();
-   
+		
+		if(res==0)
+		{
+			System.out.println("\nEsperamos ter te ajudado!\n\nCaso contrário, acesse nosso site  https://brazil.generation.org/ \r\n"
+				   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"
+				   		+ "Instagram: @generationbrasil\r\n"
+				   		+ "Whatsapp: 90000-0000\r\n\n\nVejo você por lá!!");
+			System.exit(res);
+		}
+		
+		   
 		  while(res==1||res==2||res==3||res==4||res==5||res==0||res<0||res>5) {
 		   if(res==1)
 		   {
@@ -83,18 +83,15 @@ public class Manu1 extends BaseAvatar  {
 			   System.out.println("\nOpção inválida, Digite uma opção de 1 à 5!");
 			   System.out.println("Ou se quiser sair digite 0.");
 			   res = ler.nextInt();
-		   }
-		   else 
+			   
+		   }else 
 		   {
 			   System.out.println("\nEsperamos ter te ajudado!\n\nCaso contrário, acesse nosso site  https://brazil.generation.org/ \r\n"
 				   		+ "e também nossas redes: \nE-Mail: generationbrasil@outlook.com \r\n"
 				   		+ "Instagram: @generationbrasil\r\n"
 				   		+ "Whatsapp: 90000-0000\r\n\n\nVejo você por lá!!");
-			   break;
+		   		System.exit(res);
 		   }
-		  
-		  }
-		 	
-			
+	  } 		   			
 	}
 }
