@@ -2,7 +2,7 @@ package Projeto2;
 
 import java.util.Scanner;
 
-public class Manu1 extends BaseAvatar  {
+public class Manu1 extends Apresentacao  {
 
 	Scanner ler = new Scanner(System.in);
 	
