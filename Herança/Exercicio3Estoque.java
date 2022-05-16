@@ -1,26 +1,27 @@
 package Herança;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Exercicio3Estoque {
 
 	public static void main(String[] args) {
+
+		ArrayList<String> tudo = new ArrayList<>();
+	
+		tudo.add("Camisa");
+		tudo.add("Calça");
+		tudo.add("Blusa");
 		
-		Exercicio3ModeloEstoque a = new Exercicio3ModeloEstoque(10,"Camisa",19.50);
-		Exercicio3ModeloEstoque b = new Exercicio3ModeloEstoque(5, "Calça", 55.90);
-		Exercicio3ModeloEstoque c = new Exercicio3ModeloEstoque(9, "blusas", 79.88);
+		System.out.println("Tudo o que tem no estoque: " + tudo);
 		
-		ArrayList<Exercicio3ModeloEstoque> tudo = new ArrayList<>();
+		tudo.remove(1);
 		
+		System.out.println("Tudo o que tem no estoque: " + tudo);
 		
-		tudo.add(a);
-		tudo.add(b);
-		tudo.add(c);
+		tudo.add(2,"Sapato");
+		tudo.add(3, "Bota");
 		
-		System.out.println();
-		System.out.println(tudo);
-		
-		
+		System.out.println("Tudo o que tem no estoque: " + tudo);
 
 	}
 
