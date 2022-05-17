@@ -1,12 +1,13 @@
 package Projeto2;
 
 public class BaseAvatar implements Falas  {
-
+	
+	//Encapsulamento
 	private String nome;
 	private int idade;
     private String genero;
 
-    
+    //Encapsulamento
     public String getNome() {return nome;}
 
 	public void setNome(String nome) {this.nome = nome;}
@@ -20,7 +21,7 @@ public class BaseAvatar implements Falas  {
 	public void setgenero(String genero) {this.genero = genero;}
 	
 	
-	
+	//Polimorfismo de SobreCarga
 	public int soma(int n1,int n2)
 	{
 		return n1+n2;
@@ -31,7 +32,7 @@ public class BaseAvatar implements Falas  {
 	}
 	
 	
-	
+	//Polimorfismo de SobrePosição
 	@Override
 	public void perguntasmanu() {
 

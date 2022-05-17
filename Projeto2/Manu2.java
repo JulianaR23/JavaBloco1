@@ -8,6 +8,8 @@ public class Manu2 extends Apresentacao {
 	
 	int res;
 	
+	
+	//Polimorfismo de SobrePosição
 	@Override
 	public void perguntasmanu() {
 		

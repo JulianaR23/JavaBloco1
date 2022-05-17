@@ -6,6 +6,7 @@ public class Rum extends BaseAvatar {
 
 	public static void main(String[] args) {
 		
+		//Collections
 		ArrayList<String> op = new ArrayList<>();
 		ArrayList<String> op2 = new ArrayList<>();
 

@@ -11,6 +11,7 @@ public class Apresentacao extends BaseAvatar {
     
     	public void apresentar() {
     		this.setNome("Manu");
+    		//Polimorfismo de SobreCarga
     		this.setIdade(this.soma(3,3)+this.soma(3, 5, 5));
     		this.setgenero("não-binárie");
     		System.out.println("Olá, eu sou "+this.getNome()+", muito prazer!!\nTenho "+this.getIdade()+" anos e sou uma pessoa "+this.getgenero()+".\nEstou aqui para te ajudar nessa trajetória e tirar suas dúvidas...\n");
@@ -18,6 +19,8 @@ public class Apresentacao extends BaseAvatar {
     	
     	
 		public void falarcomManuOuManu2() {
+			
+			//Exceptions
 			try {
 			System.out.println("Se você quer saber mais sobre a Generation digite o número correspondente as opções abaixo:");
 			System.out.println("1- Para conhecer a Generation");
